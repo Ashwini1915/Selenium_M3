@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test_t2(failed)">
+    <classes>
+      <class name="contactsTab.ContactScenariosTest">
+        <methods>
+          <include name="contwithOrg"/>
+          <include name="contwithsuppDate"/>
+          <include name="createcon"/>
+        </methods>
+      </class> <!-- contactsTab.ContactScenariosTest -->
+    </classes>
+  </test> <!-- Test_t2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test_t1(failed)">
+    <classes>
+      <class name="contactsTab.ContactScenariosTest">
+        <methods>
+          <include name="contwithOrg"/>
+          <include name="contwithsuppDate"/>
+          <include name="createcon"/>
+        </methods>
+      </class> <!-- contactsTab.ContactScenariosTest -->
+      <class name="organizationTab.OrgScenariosTest">
+        <methods>
+          <include name="OrgwithIndusandType1"/>
+          <include name="OrgwithIndusandType"/>
+        </methods>
+      </class> <!-- organizationTab.OrgScenariosTest -->
+    </classes>
+  </test> <!-- Test_t1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
