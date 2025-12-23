@@ -90,8 +90,9 @@ public class Baseclass {
 	    HomePomPage home = new HomePomPage(driver);
 	    Reporter.log("Logout from the application", true);
 
+	    wutil.waitUntilElement_clickable(driver, "10", home.getAdministrator());
 	    wutil.UsingMousehover(driver, home.getAdministrator());
-	    home.getSignout().click();
+
 	}
 
 	
